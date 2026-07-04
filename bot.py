@@ -6,7 +6,7 @@ from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
 # --- الإعدادات الأساسية ---
-API_TOKEN = '8804586061:AAEgbLnXAFH34y1TV9Y325nGcf4iffoIySs'
+API_TOKEN = os.environ.get('BOT_TOKEN', '8804586061:AAEgbLnXAFH34y1TV9Y325nGcf4iffoIySs')
 bot = telebot.TeleBot(API_TOKEN)
 
 # --- رموز الدخول المخصصة ---
